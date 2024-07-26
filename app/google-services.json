@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1040679509783",
+    "project_id": "elegance-boutique-373d5",
+    "storage_bucket": "elegance-boutique-373d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040679509783:android:8ad650246a2c37d129a152",
+        "android_client_info": {
+          "package_name": "com.example.eleganceboutique"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSyI7RtfLVwmej2vXvP_971ej2K12uBFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
