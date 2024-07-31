@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.squareup.picasso.Picasso
@@ -15,6 +16,7 @@ import com.squareup.picasso.Picasso
 class DetailsFragment : Fragment() {
 
     private val args: DetailsFragmentArgs by navArgs()
+    private val cartViewModel: CartViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +35,7 @@ class DetailsFragment : Fragment() {
         productPriceTextView.text = product.price.toString()
 
         addToCartButton.setOnClickListener {
+            cartViewModel.addProductToCart(product)
             findNavController().navigate(R.id.action_detailsFragment_to_cardFragment)
         }
 

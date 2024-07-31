@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -16,6 +18,7 @@ class LoginFragment : Fragment() {
     private lateinit var auth: FirebaseAuth
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: EditText
+    private lateinit var tvSignUp: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,6 +30,7 @@ class LoginFragment : Fragment() {
         emailEditText = view.findViewById(R.id.etUsername)
         passwordEditText = view.findViewById(R.id.etPassword)
         val loginButton = view.findViewById<MaterialButton>(R.id.btnSignIn)
+        tvSignUp = view.findViewById(R.id.tvSignUp)
 
         loginButton.setOnClickListener {
             val email = emailEditText.text.toString().trim()
@@ -50,6 +54,11 @@ class LoginFragment : Fragment() {
                         Toast.makeText(context, "Authentication failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                     }
                 }
+
+        }
+
+        tvSignUp.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
 
         return view

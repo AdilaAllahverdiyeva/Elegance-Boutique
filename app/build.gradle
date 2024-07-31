@@ -56,7 +56,13 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:21.2.0'
     implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.3'
     implementation 'com.google.firebase:firebase-analytics'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation "androidx.compose.ui:ui:1.3.0" // Core UI components
+    implementation "androidx.compose.material:material:1.3.0" // Material design components
+    implementation "androidx.compose.ui:ui-tooling-preview:1.3.0" // Preview support
+    debugImplementation "androidx.compose.ui:ui-tooling:1.3.0" // Debug tools
     testImplementation 'junit:junit:4.13.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     implementation 'com.google.firebase:firebase-database:20.0.4'
     implementation 'com.firebaseui:firebase-ui-storage:8.0.0'

@@ -41,13 +41,10 @@
     </fragment>
 
     <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.example.eleganceboutique.DetailsFragment"
-        android:label="fragment_details">
-        <argument
-            android:name="product"
-            app:argType="com.example.eleganceboutique.Product" />
-    </fragment>
+        android:id="@+id/userFragment"
+        android:name="com.example.eleganceboutique.UserFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_user"/>
 
     <fragment
         android:id="@+id/cardFragment"
@@ -55,8 +52,17 @@
         android:label="Card"
         tools:layout="@layout/fragment_card" >
 
-    <action
-        android:id="@+id/action_detailsFragment_to_cardFragment"
-        app:destination="@id/cardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.eleganceboutique.DetailsFragment"
+        android:label="fragment_details">
+        <argument
+            android:name="product"
+            app:argType="com.example.eleganceboutique.Product" />
+        <action
+            android:id="@+id/action_detailsFragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
     </fragment>
 </navigation>
