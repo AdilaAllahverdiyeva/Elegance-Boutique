@@ -1,13 +1,17 @@
 buildscript {
+    ext.hilt_version = '2.40.5'
+
     repositories {
         google()
         mavenCentral()
     }
+
     dependencies {
         classpath 'com.android.tools.build:gradle:7.4.2' // Android Gradle Plugin
         classpath 'com.google.gms:google-services:4.3.15' // Updated Google Services plugin version
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3" // Navigation Safe Args
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2' // Firebase Crashlytics Gradle Plugin
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version" // Hilt Gradle Plugin
     }
 }
 

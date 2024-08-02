@@ -33,7 +33,6 @@ class HomeFragment : Fragment() {
             productAdapter.setProducts(products)
         })
 
-
         return view
     }
 }

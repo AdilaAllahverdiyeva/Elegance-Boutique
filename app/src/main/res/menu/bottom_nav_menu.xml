@@ -1,14 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_home"
+        android:id="@+id/homeFragment"
         android:icon="@drawable/baseline_home_24"
         android:title="Home" />
     <item
-        android:id="@+id/nav_user"
+        android:id="@+id/userFragment"
         android:icon="@drawable/baseline_person_24"
         android:title="User" />
     <item
-        android:id="@+id/nav_cart"
+        android:id="@+id/cardFragment"
         android:icon="@drawable/baseline_add_shopping_cart_24"
         android:title="Cart" />
 </menu>

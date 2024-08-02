@@ -34,7 +34,6 @@ class CartAdapter() : ListAdapter<Product, CartAdapter.CartViewHolder>(DiffCallb
         holder.productName.text = product.name
         holder.productPrice.text = product.price.toString()
 
-        // Load the product image using Picasso
         if (product.image.isNotEmpty()) {
             Picasso.get().load(product.image).into(holder.productImage)
         } else {

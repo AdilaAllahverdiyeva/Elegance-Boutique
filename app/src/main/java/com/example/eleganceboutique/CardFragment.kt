@@ -13,6 +13,7 @@ class CardFragment : Fragment() {
 
     private val cartViewModel: CartViewModel by activityViewModels()
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

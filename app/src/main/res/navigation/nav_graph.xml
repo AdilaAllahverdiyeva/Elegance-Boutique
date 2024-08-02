@@ -38,19 +38,49 @@
         <action
             android:id="@+id/action_homeFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@+id/userFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cardFragment"
+            app:destination="@+id/cardFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/userFragment"
         android:name="com.example.eleganceboutique.UserFragment"
         android:label="User"
-        tools:layout="@layout/fragment_user"/>
+        tools:layout="@layout/fragment_user">
+
+        <action
+            android:id="@+id/action_userFragment_to_homeFragment"
+            app:destination="@+id/homeFragment" />
+
+        <action
+            android:id="@+id/action_userFragment_to_cardFragment"
+            app:destination="@+id/cardFragment" />
+
+        <action
+            android:id="@+id/action_userFragment_to_loginFragment"
+            app:destination="@+id/loginFragment" />
+
+    </fragment>
+
 
     <fragment
         android:id="@+id/cardFragment"
         android:name="com.example.eleganceboutique.CardFragment"
         android:label="Card"
-        tools:layout="@layout/fragment_card" >
+        tools:layout="@layout/fragment_card">
+
+        <action
+            android:id="@+id/action_cardFragment_to_homeFragment"
+            app:destination="@+id/homeFragment" />
+
+        <action
+            android:id="@+id/action_cardFragment_to_userFragment"
+            app:destination="@+id/userFragment"/>
 
     </fragment>
 
