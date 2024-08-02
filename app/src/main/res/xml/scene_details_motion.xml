@@ -15,24 +15,20 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-        <!-- Başlanğıc vəziyyət -->
         <Constraint
             android:layout_width="match_parent"
             android:layout_height="400dp"
             motion:layout_constraintTop_toTopOf="parent"/>
 
-        <!-- Digər komponentlərin başlanğıc vəziyyətini buraya əlavə edin -->
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
-        <!-- Son vəziyyət -->
         <Constraint
             android:id="@id/ivProductImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             motion:layout_constraintTop_toTopOf="parent"/>
 
-        <!-- Digər komponentlərin son vəziyyətini buraya əlavə edin -->
     </ConstraintSet>
 
 </MotionScene>

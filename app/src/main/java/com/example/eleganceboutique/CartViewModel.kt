@@ -10,6 +10,6 @@ class CartViewModel : ViewModel() {
 
     fun addProductToCart(product: Product) {
         _cartItems.value?.add(product)
-        _cartItems.value = _cartItems.value // Trigger observers
+        _cartItems.value = _cartItems.value
     }
 }
